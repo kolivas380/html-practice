@@ -21,6 +21,22 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+.hero-button {
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: lightgray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10pt;
+}
+
+.hero-button:hover{
+  background-color: black;
+  transition: 0.5s;
+}
 .main-nav {
   position: fixed; /* Fixes the menu to the viewport */
   top: 0; /* Align to the top edge */
@@ -69,6 +85,15 @@ html {
   color: white;
 }
 
+.grid-container h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.grid-container p {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 button {
   background-color: #04AA6D; /* Green */
   border: none;
@@ -87,6 +112,7 @@ body {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+ 
 }
 
 hr {
