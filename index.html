@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyrax Hive</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to the Hyrax Hive</h1>
+        <p>Hyraxes - the evil cave creatures</p>
+        <button>Learn more</button>
+      </div>
+    </div>
+    <div class="off-canvas-wrapper">
+      <!-- Your menu or Off-canvas content goes here -->
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <!-- Close button -->
+        <button
+          class="close-button"
+          aria-label="Close menu"
+          type="button"
+          data-close
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="#">Their home</a></li>
+          <li><a href="#">Their diet</a></li>
+          <li><a href="#">Their relatives</a></li>
+          <li><a href="#">Fun facts</a></li>
+        </ul>
+      </div>
+      <!-- Your page content lives here -->
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- main content within a `grid-container` -->
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <button
+              type="button"
+              class="cell large-auto button"
+              data-toggle="offCanvas"
+            >
+              Open Menu
+            </button>
+          </div>
+          <!-- `grid-x` represents a row -->
+          <div class="grid-x grid-padding-x">
+            <div class="cell small-6 large-4" style="background-color: #add8e6">
+              Small 6 / Large 4
+            </div>
+            <div class="cell small-6 large-8" style="background-color: #90ee90">
+              Small 6 / Large 8
+            </div>
+          </div>
+
+          <div class="grid-x grid-padding-x">
+            <div class="cell large-auto">
+              <h1>What is a Hyrax?</h1>
+              <p>The hyrax is also called rock rabbit or dassie, is a small furry mammal. It looks like a robust, oversized guinea pig, or a rabbit with rounded ears and no tail. 
+                Hyraxes have stumpy toes with hoof-like nails; and four toes on each front foot and three on each back foot. The longer, claw-like nails on the inside toes and the 
+                back feet are used for grooming and scratching. The bottoms of the feet have a rubbery texture to assist in climbing steep rock surfaces and trees.
+                Of the three hyrax species, two are known as rock (or bush) hyrax, and the third as tree hyrax. In the field, it is sometimes difficult to differentiate among them. 
+                The rock hyrax has the widest distribution in East Africa. Its coat is yellowish — or grayish-brown — and the dorsal spot (a bare scent gland on the back covered with 
+                longer hair) is covered with black or yellow hair. Its head is more rounded than other types of hyraxes, and the nose is blunt. The yellow-spotted hyrax, or rock rabbit, 
+                is smaller in size and has a more pointed, rodent-like nose. Generally, it has a conspicuous white patch over the eye, and its dorsal spot is whitish or yellowish. 
+                It is sometimes seen in the company of other types of hyrax, but species do not interbreed. Tree hyraxes, unsurprisingly, spend a lot of time in trees. In some areas, 
+                they are hunted for their thick, soft, long hair. They have a white or yellow dorsal spot.</p>
+            </div>
+            <div class="cell large-auto" style="background-color: #90ee90">
+              Two
+            </div>
+            <div class="cell large-auto" style="background-color: #add8e6">
+              Three
+            </div>
+            <div class="cell large-auto" style="background-color: #90ee90">
+              Four
+            </div>
+            <div class="cell large-auto" style="background-color: #add8e6">
+              Five
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+      $(document).foundation();
+    </script>
+  </body>
+</html>
