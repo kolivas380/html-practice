@@ -19,21 +19,41 @@
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+.section-divider {
+  border: none; /* Remove default border */
+  border-top: 1px solid #ccc; /* Create a 1px solid grey line */
+  margin: 20px 0; /* Add some vertical spacing */
+}
+
+.text-box {
+  background-color: #f0f0f0; /* Light gray background color */
+  border: 2px solid #333; /* 2px solid dark gray border */
+  padding: 20px; /* Space between text and border */
+  margin: 50px; /* Space around the entire box */
+  width: 300px; /* Set a fixed width for the box */
+  font-family: Arial, sans-serif; /* Choose a font */
+  color: #000; /* Text color */
+  text-align: center;
+  border-radius: 10pt;
+  /* Center the text */
 }
 
 .hero-button {
-    background-color: #ffffff; /* Green */
-    border: none;
-    color: lightgray;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10pt;
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: lightgray;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10pt;
 }
 
-.hero-button:hover{
+.hero-button:hover {
   background-color: black;
   transition: 0.5s;
 }
@@ -44,13 +64,59 @@ html {
   z-index: 100; /* Ensure the menu is always on top */
   padding: 1rem; /* Adjusts the spacing from the top and left edges */
 }
+/* add hover with linear gradient and why they are relatives */
+.elephant-image {
+  background-image: url(African_Bush_Elephant.jpg.webp);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.elephant-image:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(African_Bush_Elephant.jpg.webp);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.manatee-image {
+  background-image: url(florida-manatee-underwater-picture-36329-12392.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: background-image 2.0s ease;
+}
+
+.manatee-image:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(florida-manatee-underwater-picture-36329-12392.jpg);
+  transition: 2.0s;
+  cursor: pointer;
+}
+
+.aardvark-image {
+  background-image: url(aardvarkImage.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.aardvark-image:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(aardvarkImage.jpg);
+  transition: 0.5s;
+  cursor: pointer;
+}
 
 .hamburger-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 2rem; /* The total width of the hamburger icon */
-  height: 1.5rem; /* The total height of the hamburger icon */
+  width: 2rem;
+  height: 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -62,7 +128,7 @@ html {
   display: block;
   width: 100%;
   height: 0.25rem; /* The height of each bar */
-  background-color: #FFFF;
+  background-color: #ffff;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -86,16 +152,16 @@ html {
 }
 
 .grid-container h1 {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
 .grid-container p {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
-  background-color: #04AA6D; /* Green */
+  background-color: #04aa6d; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -107,12 +173,12 @@ button {
 
 body {
   margin: 0;
+  background-color: #ffd79c;
 }
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
- 
 }
 
 hr {
