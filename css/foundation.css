@@ -41,7 +41,7 @@ html {
   /* Center the text */
 }
 
-.hero-button {
+#hero-button {
   background-color: #ffffff; /* Green */
   border: none;
   color: lightgray;
@@ -53,7 +53,7 @@ html {
   border-radius: 10pt;
 }
 
-.hero-button:hover {
+#hero-button:hover {
   background-color: black;
   transition: 0.5s;
 }
